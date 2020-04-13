@@ -2,14 +2,20 @@ type Movie {
     id: Int!
     title: String!
     rating: Float!
-    summary: String!
-    language: String!
-    medium_cover_image: String!
-} 
+    summary: String
+    description_intro: String
+    language: String
+    medium_cover_image: String
+}
+
+# input MovieInput{
+#     id: Int!
+# } 
 
 type Query{
     movies(limit: Int, rating: Float) : [Movie]!
-#    movie(id: Int!): Movie
+    movie(id: Int!): Movie
+    suggestions(id: Int!): [Movie]!
 }
 
 #type Mutation{
