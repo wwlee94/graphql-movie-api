@@ -22,15 +22,15 @@ This is Movie API with GraphQL
 #### 반면에, `GraphQL` 의 경우 1번의 API 호출로 원하는 정보를 가져올 수 있다.
 
     query{
-    	user(id : 1){
-    		name
-    		posts{
-    			title
-    		}
-    		followers(last : 3){
-    			name
-    		}
-    	}
+      user(id : 1){
+        name
+        posts{
+          title
+        }
+        followers(last : 3){
+          name
+        }
+      }
     }
 
 ### GraphQL 개발 이후 얻은 것
